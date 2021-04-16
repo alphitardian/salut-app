@@ -62,6 +62,7 @@
   "@addAnnouncement": {
     "description": "Digunakan pada Add Pengumuman Screen."
   },
+  "alertWarningMessageDelete": "Ketika sudah terhapus, maka data tidak dapat dipulihkan kembali.",
 
 
 

@@ -79,7 +79,14 @@ class DatabaseRenunganServices {
   }
 
   static Future<void> deleteData(String id) async {
+    String imageUrl = '';
+
+    await renunganCollection.doc(id).get().then((value) {
+      imageUrl = value.data()!['gambar'];
+    });
+
     await renunganCollection.doc(id).delete();
+    await deleteImage(imageUrl);
   }
 
   static Future<String?> uploadImage(PickedFile image) async {
@@ -168,6 +175,17 @@ class DatabaseWartaJemaatServices {
     final Reference firebaseStorageRef =
         FirebaseStorage.instance.ref().child(fileUrl);
     await firebaseStorageRef.delete();
+  }
+
+  static Future<void> deleteData(String id) async {
+    String fileUrl = '';
+
+    await wartaCollection.doc(id).get().then((value) {
+      fileUrl = value.data()!['file'];
+    });
+
+    await wartaCollection.doc(id).delete();
+    await deleteFile(fileUrl);
   }
 }
 

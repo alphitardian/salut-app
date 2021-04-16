@@ -50,8 +50,47 @@ class _JemaatDetailScreenState extends State<JemaatDetailScreen> {
             widget.args.admin
                 ? IconButton(
                     onPressed: () {
-                      DatabaseJemaatServices.deleteData(widget.args.id);
-                      Navigator.pop(context);
+                      showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                              title: Text(
+                                  AppLocalizations.of(context)!.alertWarning),
+                              content: Text(AppLocalizations.of(context)!
+                                  .alertWarningMessageDelete),
+                              actions: [
+                                TextButton(
+                                  child: Text(
+                                    AppLocalizations.of(context)!.noButton,
+                                    style: TextStyle(color: secondaryColor),
+                                  ),
+                                  onPressed: () {
+                                    Navigator.pop(context);
+                                  },
+                                ),
+                                TextButton(
+                                  child: Text(
+                                    AppLocalizations.of(context)!.yesButton,
+                                    style: TextStyle(color: secondaryColor),
+                                  ),
+                                  onPressed: () {
+                                    Navigator.pop(context);
+                                    Navigator.popUntil(
+                                        context,
+                                        (route) => widget.args.admin
+                                            ? route.settings.name! ==
+                                                AdminMainScreenRoute +
+                                                    JemaatDataListScreenRoute
+                                            : route.settings.name! ==
+                                                JemaatMainScreenRoute +
+                                                    JemaatDataListScreenRoute);
+                                    DatabaseJemaatServices.deleteData(
+                                        widget.args.id);
+                                  },
+                                )
+                              ],
+                            );
+                          });
                     },
                     icon: Icon(
                       Icons.delete,

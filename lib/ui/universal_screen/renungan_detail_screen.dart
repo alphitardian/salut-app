@@ -21,8 +21,46 @@ class RenunganDetailScreen extends StatelessWidget {
                   imageUrl: args.imageUrl,
                   title: AppLocalizations.of(context)!.renunganData,
                   function: () {
-                    DatabaseRenunganServices.deleteData(args.id);
-                    Navigator.pop(context);
+                    showDialog(
+                        context: context,
+                        builder: (context) {
+                          return AlertDialog(
+                            title: Text(
+                                AppLocalizations.of(context)!.alertWarning),
+                            content: Text(AppLocalizations.of(context)!
+                                .alertWarningMessageDelete),
+                            actions: [
+                              TextButton(
+                                child: Text(
+                                  AppLocalizations.of(context)!.noButton,
+                                  style: TextStyle(color: secondaryColor),
+                                ),
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                },
+                              ),
+                              TextButton(
+                                child: Text(
+                                  AppLocalizations.of(context)!.yesButton,
+                                  style: TextStyle(color: secondaryColor),
+                                ),
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                  Navigator.popUntil(
+                                      context,
+                                      (route) => args.admin
+                                          ? route.settings.name! ==
+                                              AdminMainScreenRoute +
+                                                  RenunganDataListScreenRoute
+                                          : route.settings.name! ==
+                                              JemaatMainScreenRoute +
+                                                  RenunganDataListScreenRoute);
+                                  DatabaseRenunganServices.deleteData(args.id);
+                                },
+                              )
+                            ],
+                          );
+                        });
                   },
                 ),
                 SliverFillRemaining(
@@ -69,8 +107,46 @@ class RenunganDetailScreen extends StatelessWidget {
                   imageUrl: args.imageUrl,
                   title: AppLocalizations.of(context)!.renunganData,
                   function: () {
-                    DatabaseRenunganServices.deleteData(args.id);
-                    Navigator.pop(context);
+                    showDialog(
+                        context: context,
+                        builder: (context) {
+                          return AlertDialog(
+                            title: Text(
+                                AppLocalizations.of(context)!.alertWarning),
+                            content: Text(AppLocalizations.of(context)!
+                                .alertWarningMessageDelete),
+                            actions: [
+                              TextButton(
+                                child: Text(
+                                  AppLocalizations.of(context)!.noButton,
+                                  style: TextStyle(color: secondaryColor),
+                                ),
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                },
+                              ),
+                              TextButton(
+                                child: Text(
+                                  AppLocalizations.of(context)!.yesButton,
+                                  style: TextStyle(color: secondaryColor),
+                                ),
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                  Navigator.popUntil(
+                                      context,
+                                      (route) => args.admin
+                                          ? route.settings.name! ==
+                                              AdminMainScreenRoute +
+                                                  RenunganDataListScreenRoute
+                                          : route.settings.name! ==
+                                              JemaatMainScreenRoute +
+                                                  RenunganDataListScreenRoute);
+                                  DatabaseRenunganServices.deleteData(args.id);
+                                },
+                              )
+                            ],
+                          );
+                        });
                   },
                 ),
                 SliverFillRemaining(

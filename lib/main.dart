@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'GKJ Salut App',
       debugShowCheckedModeBanner: false,
       initialRoute: StartScreenRoute,
       onGenerateRoute: generateRoute,

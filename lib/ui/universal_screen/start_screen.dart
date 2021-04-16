@@ -44,6 +44,7 @@ class _StartScreenState extends State<StartScreen>
     return WillPopScope(
       onWillPop: () => exitApp(context),
       child: MaterialApp(
+        title: 'GKJ Salut App',
         debugShowCheckedModeBanner: false,
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,

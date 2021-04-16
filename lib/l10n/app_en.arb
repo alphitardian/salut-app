@@ -129,6 +129,10 @@
   "@alertWarning": {
     "description": "Digunakan pada Alert Admin Main Screen."
   },
+  "alertWarningMessageDelete": "Once deleted, there's no way to restore the data.",
+  "@alertWarningMessageDelete": {
+    "description": "Digunakan pada Alert Delete."
+  },
 
 
 
