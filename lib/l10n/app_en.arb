@@ -1,0 +1,156 @@
+{
+  "@@locale": "en",
+  "appName": "SalutApp",
+
+
+  "welcome": "Welcome",
+  "@welcome": {
+    "description":"Digunakan pada title Start Screen."
+  },
+  "to": "To",
+  "@to": {
+    "description":"Digunakan pada title Start Screen."
+  },
+  "jemaat": "Churchgoers",
+  "@jemaat": {
+    "description":"Digunakan pada button Start Screen."
+  },
+
+
+
+  "fors": "For",
+  "@for": {
+    "description": "Digunakan pada title Login Screen."
+  },
+  "admin": "Administrator",
+  "@admin": {
+    "description": "Digunakan pada title Login Screen dan button Start Screen."
+  },
+  "only": "Only",
+  "@only": {
+    "description":"Digunakan pada title Login Screen."
+  },
+  "email": "Email",
+  "password": "Password",
+  "loginFailed": "Login Failed! Please check your email/password.",
+  "loginInformation": "For register account, please contact the church or developer.",
+  "loginSuccess": "Login Success!",
+
+
+
+  "jemaatData": "Churchgoers Data",
+  "@jemaatData": {
+    "description":"Digunakan pada button Jemaat Main Screen, Admin Main Screen dan Jemaat Data Screen."
+  },
+  "renunganData": "Reflection",
+  "@renunganData": {
+    "description":"Digunakan pada button Jemaat Main Screen, Admin Main Screen dan Renungan Data Screen."
+  },
+  "wartaJemaatData": "Churchgoers News",
+  "@wartaJemaatData": {
+    "description":"Digunakan pada button Jemaat Main Screen, Admin Main Screen dan Warta Data Screen."
+  },
+  "announcementList": "Latest Announcement",
+  "@announcementList": {
+    "description":"Digunakan pada button Jemaat Main Screen dan Admin Main Screen."
+  },
+
+
+
+  "announcement": "Announcement",
+  "@announcement": {
+    "description": "Digunakan pada Pengumuman Detail Screen."
+  },
+
+
+
+  "searchHint": "Search Here",
+  "@searchHint": {
+    "description":"Digunakan pada Jemaat Search Screen."
+  },
+
+
+
+  "addJemaat": "Add Churchgoers",
+  "@addJemaat" : {
+    "description": "Digunakan pada Add Jemaat Screen."
+  },
+  "updateJemaat": "Update Churchgoers",
+  "@updateJemaat" : {
+    "description": "Digunakan pada Add Jemaat Screen."
+  },
+  "name": "Full Name",
+  "job": "Job",
+  "phone": "Phone",
+  "addButton": "Add",
+  "updateButton": "Update",
+  "deleteButton": "Delete",
+
+
+
+  "addWarta": "Add Churchgoers News",
+  "@addWarta": {
+    "description":"Digunakan pada Add Warta Screen."
+  },
+  "title": "Title",
+  "pickFile": "Pick File",
+
+
+
+  "addRenungan": "Add Reflection",
+  "@addRenungan" : {
+    "description":"Digunakan pada Add Renungan Screen."
+  },
+  "updateRenungan": "Update Reflection",
+  "@updateRenungan" : {
+    "description":"Digunakan pada Add Renungan Screen."
+  },
+  "body": "Body",
+  "pickImage" : "Pick Image",
+
+
+
+  "addAnnouncement": "Add Announcement",
+  "@addAnnouncement": {
+    "description": "Digunakan pada Add Pengumuman Screen."
+  },
+
+
+
+  "jemaatAge": "Age :",
+  "jemaatBirth": "Birth Date :",
+  "jemaatJob": "Job :",
+  "jemaatPhone": "Phone/WhatsApp Number :",
+
+
+
+  "alertWarning": "Are you sure?",
+  "alertWarningMessage": "You must re-login to access Admin Screen later.",
+  "@alertWarning": {
+    "description": "Digunakan pada Alert Admin Main Screen."
+  },
+
+
+
+  "downloadFile": "Downloading File",
+  "@downloadFile": {
+    "description": "Digunakan pada snackbar download warta."
+  },
+
+
+
+  "yesButton": "Yes",
+  "noButton": "No",
+  "okButton": "Ok",
+
+
+
+  "loginButton": "Log In",
+
+
+
+  "noData": "No Data Available",
+
+
+  "helloWorld": "Hello World!"
+}

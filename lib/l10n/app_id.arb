@@ -1,0 +1,99 @@
+{
+  "@@locale": "id",
+  "appName": "SalutApp",
+
+
+  "welcome": "Selamat Datang",
+  "to": "Di",
+  "jemaat": "Jemaat",
+
+
+
+  "fors": "Untuk",
+  "admin": "Admin",
+  "only": "Saja",
+  "email": "Email",
+  "password": "Kata Sandi",
+  "loginFailed": "Login Gagal! Mohon periksa email/kata sandi anda.",
+  "loginInformation": "Untuk pendaftaran akun, mohon hubungi gereja atau pengembang.",
+  "loginSuccess": "Login Berhasil!",
+
+
+  "announcementList": "Pengumuman Terbaru",
+  "jemaatData": "Data Jemaat",
+  "renunganData": "Renungan",
+  "wartaJemaatData": "Warta Jemaat",
+
+
+
+  "announcement": "Pengumuman",
+
+
+
+  "searchHint": "Cari di sini",
+
+
+
+  "addJemaat": "Tambah Jemaat",
+  "updateJemaat": "Perbarui Jemaat",
+  "name": "Nama Lengkap",
+  "job": "Pekerjaan",
+  "phone": "Nomor Telepon",
+  "addButton": "Tambah",
+  "updateButton": "Perbarui",
+  "deleteButton": "Hapus",
+
+
+
+  "addWarta": "Tambah Warta Jemaat",
+  "title": "Judul",
+  "pickFile": "Pilih File",
+
+
+
+  "addRenungan": "Tambah Renungan",
+  "updateRenungan": "Perbarui Renungan",
+  "body": "Isi",
+  "pickImage" : "Pilih Gambar",
+
+
+
+  "addAnnouncement": "Tambah Pengumuman",
+  "@addAnnouncement": {
+    "description": "Digunakan pada Add Pengumuman Screen."
+  },
+
+
+
+  "jemaatAge": "Umur : ",
+  "jemaatBirth": "Tanggal Lahir : ",
+  "jemaatJob": "Pekerjaan : ",
+  "jemaatPhone": "Nomor HP/WhatsApp : ",
+
+
+
+  "alertWarning": "Apakah Anda Yakin?",
+  "alertWarningMessage": "Anda harus Login kembali bilang ingin masuk ke Halaman Admin.",
+
+
+
+  "downloadFile": "Mengunduh File",
+
+
+
+  "yesButton": "Ya",
+  "noButton": "Tidak",
+  "okButton": "Ok",
+
+
+
+  "loginButton": "Masuk",
+
+
+
+  "noData": "Tidak Tersedia Data",
+
+
+  "helloWorld": "Halo Dunia!"
+
+}
