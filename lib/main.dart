@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
       supportedLocales: AppLocalizations.supportedLocales,
       theme: ThemeData.light().copyWith(
         accentColor: secondaryColor,
+        primaryColor: mainColor,
       ),
     );
   }

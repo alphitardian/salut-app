@@ -25,15 +25,13 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  awesome_notifications: ^0.0.5+8
-  carousel_slider: ^4.0.0-nullsafety.0
   cloud_firestore: ^1.0.3
-  csv: ^5.0.0
   cupertino_icons: ^1.0.2
   file_picker: ^3.0.0
   firebase_auth: ^1.0.0
   firebase_core: ^1.0.0
   firebase_storage: ^8.0.0
+  flutter_launcher_icons: ^0.9.0
   flutter_pdfview: ^1.1.0
   flutter_slidable: ^0.6.0-nullsafety.0
   fluttericon: ^2.0.0
@@ -54,6 +52,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+flutter_icons:
+  android: true
+  ios: true
+  image_path_android: "assets/images/salutapp-logo.png"
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter.

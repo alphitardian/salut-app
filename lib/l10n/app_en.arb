@@ -156,5 +156,10 @@
   "noData": "No Data Available",
 
 
+
+  "developedBy": "Developed by\n",
+  "businessInquiry": "Contact developer for business inquiry.\n@alphitardian",
+
+
   "helloWorld": "Hello World!"
 }

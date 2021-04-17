@@ -37,7 +37,9 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
         child: Container(
           width: kIsWeb
               ? MediaQuery.of(context).size.width / 3
-              : MediaQuery.of(context).size.width * (90 / 100),
+              : MediaQuery.of(context).size.width,
+          padding:
+              kIsWeb ? EdgeInsets.all(0) : EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,

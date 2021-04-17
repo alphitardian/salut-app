@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fluttericon/font_awesome_icons.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:salut_app_flutter/common.dart';
 import 'package:salut_app_flutter/components/card_menu.dart';
 import 'package:salut_app_flutter/models/pengumuman_model.dart';
@@ -29,6 +30,56 @@ class _JemaatMainScreenState extends State<JemaatMainScreen> {
             Navigator.pop(context);
           },
         ),
+        actions: [
+          IconButton(
+              icon: Icon(
+                Icons.more_horiz,
+                color: Colors.black,
+              ),
+              onPressed: () {
+                showAboutDialog(
+                  context: context,
+                  applicationIcon: Image.asset(
+                    'assets/images/salutapp-logo.png',
+                    height: 50,
+                    width: 50,
+                    fit: BoxFit.cover,
+                  ),
+                  applicationVersion: '1.0.0',
+                  children: [
+                    RichText(
+                      text: TextSpan(
+                        style: GoogleFonts.poppins(color: Colors.black),
+                        children: [
+                          TextSpan(
+                            text: AppLocalizations.of(context)!.developedBy,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          TextSpan(
+                            text: 'Ardian Pramudya Alphita',
+                            style: TextStyle(
+                              fontSize: 18,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 12,
+                    ),
+                    Text(
+                      AppLocalizations.of(context)!.businessInquiry,
+                      style: GoogleFonts.poppins(
+                        fontSize: 12,
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
+                  ],
+                );
+              }),
+        ],
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
